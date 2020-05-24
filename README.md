@@ -1,1 +1,4 @@
-# monitoring
+# Monitoring 
+
+**$** kubectl create namespace monitoring 
+
