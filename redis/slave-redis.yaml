@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: redis 
 spec: 
-  replicas: 1 
+  replicas: 2 
   selector: 
     matchLabels: 
       app: redis 
@@ -25,7 +25,7 @@ spec:
             - containerPort: 6397 
           env: 
             - name: GET_HOSTS_FROM 
-              value: env 
+              value: dns 
 --- 
 apiVersion: v1 
 kind: Service 
